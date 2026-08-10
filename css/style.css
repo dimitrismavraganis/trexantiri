@@ -22,9 +22,13 @@ a:hover{ color:var(--navy-dark); }
 .trx-book-btn{ background:var(--navy); color:#fff; font-weight:600; font-size:14px; padding:11px 22px; border-radius:10px; text-decoration:none; white-space:nowrap; }
 .trx-book-btn:hover{ background:var(--navy-dark); color:#fff; }
 .trx-burger{ display:none; background:none; border:none; cursor:pointer; padding:8px; align-items:center; justify-content:center; }
+.trx-actions{ display:flex; align-items:center; gap:14px; }
+.trx-lang{ font-size:13px; font-weight:700; letter-spacing:.06em; color:var(--navy); text-decoration:none; border:1.5px solid var(--border); border-radius:8px; padding:8px 11px; line-height:1; white-space:nowrap; transition:background .2s ease, border-color .2s ease; }
+.trx-lang:hover{ background:#DCE9F0; border-color:var(--navy); color:var(--navy); }
 @media (max-width:820px){
   .trx-nav{ display:none; }
   .trx-book-btn{ display:none; }
+  .trx-actions{ display:none; }
   .trx-burger{ display:flex; }
 }
 

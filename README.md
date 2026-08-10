@@ -1,21 +1,73 @@
-# Τρεχαντήρι 1924 — static site
+# Τρεχαντήρι 1924 — bilingual static site
 
-Plain HTML/CSS/JS build of the Trexantiri website. No build step, no framework — deploys as-is.
+Plain HTML/CSS/JS. The only build step is a small script that generates the
+English pages from the Greek ones.
 
 ## Structure
-- `index.html`, `about.html`, `contact.html`, `menu.html` — the four pages
+- `index.html`, `about.html`, `contact.html`, `menu.html` — the four pages, **authored in Greek**. These are the single source of truth for both languages.
+- `i18n/en.json` — Greek string → English string
+- `build.js` — generates `dist/`
 - `css/style.css` — all shared styles
 - `js/main.js` — header glass-on-scroll, mobile modal menu, infinite draggable carousels, scroll-reveal (IntersectionObserver)
 - `js/home.js` — homepage-only: preloader, hero expand/reveal animation, closing-scene text reveal
 - `assets/` — images
 
-## Deploy to Vercel
-1. Push this folder to a GitHub repo (root of the repo = this folder, i.e. `index.html` at the repo root).
-2. In Vercel: **New Project → Import** the repo.
-3. Framework preset: **Other** (static). No build command, no output directory override needed — Vercel serves the root as-is.
-4. Deploy.
+## Building
+
+```
+npm run build     # or: node build.js
+```
+
+Output:
+
+```
+dist/index.html      →  /            English (default)
+dist/el/index.html   →  /el/         Greek
+dist/css, js, assets →  shared by both languages
+```
+
+To preview locally you need a server that understands `cleanUrls` (so `/about`
+serves `about.html`). Any static server that does extensionless lookup works.
+
+## How the translation works
+
+Edit copy in the Greek `.html` files as normal. Most strings are matched by
+their **exact Greek text**, so nothing in the markup needs annotating — add the
+matching entry to `i18n/en.json` and it is picked up.
+
+If you change a Greek string and forget its translation, the build prints it:
+
+```
+2 string(s) with no en translation in i18n/en.json:
+  · Καλαμάκι, Ίσθμια
+```
+
+The page still builds — it just falls back to the Greek text — so a missed
+translation is visible rather than silent.
+
+Two spots need the markup itself to differ between languages and carry an
+explicit attribute instead:
+
+- `data-i18n-words="scene.headline"` — the homepage closing headline animates
+  word by word, so the build re-splits the translated phrase into spans.
+- `data-i18n="about.generation"` — `4η γενιά` / `4th generation`, where the
+  superscript sits in a different place in each language.
+
+The build also handles, for both languages: `<html lang>`, `canonical` and
+`hreflang` tags, internal links, the header/mobile language switcher, and
+tagging Greek fragments on English pages with `lang="el"` so `text-transform:
+uppercase` drops the accents the way Greek requires (Μπύρες → ΜΠΥΡΕΣ).
+
+Dish names in `menu.html` are already English and are deliberately left alone in
+both languages; only the section headings swap, each showing the other language
+as its subtitle.
+
+## Deploy
+
+Vercel builds from `vercel.json` — `node build.js`, output `dist`. Push to
+`main` and it deploys.
 
 ## Notes
-- The 4 dish tiles under "Ό,τι θα βρείτε στο τραπέζι μας" on the homepage still show placeholder tiles (no real photo was supplied) — drop images into `assets/` and swap the `.img-placeholder` divs in `index.html` for `<img>` tags when ready.
 - The webcam embed and Google Maps embed point at third-party URLs and need no keys.
 - Update the Facebook link (currently `https://facebook.com`) in each page's footer once the real page exists.
+- `assets/scene-dorado.webp` (8.3 MB) and `assets/scene-octopus.jpg` (7.1 MB) are large enough to hurt load time and are worth recompressing.

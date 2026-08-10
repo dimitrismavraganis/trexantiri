@@ -1,0 +1,9 @@
+{
+  "name": "trexantiri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static bilingual site for Τρεχαντήρι 1924",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
