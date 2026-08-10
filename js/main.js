@@ -24,8 +24,14 @@
       });
     });
     overlay.addEventListener('click', close);
+    // The panel swallows clicks so that clicking inside it doesn't dismiss the
+    // menu — which means the close button needs its own handler to reach us.
     if (panel) panel.addEventListener('click', function (e) { e.stopPropagation(); });
+    overlay.querySelectorAll('button.close').forEach(function (b) { b.addEventListener('click', close); });
     overlay.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', close); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') close();
+    });
   }
 
   // infinite-loop draggable carousels
