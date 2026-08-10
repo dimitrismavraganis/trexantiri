@@ -200,7 +200,10 @@ function applyExplicitOverrides(html, dict, missing) {
 
 function pageUrl(page, dir) {
   const base = dir ? '/' + dir : '';
-  return page === 'index.html' ? base + '/' : base + '/' + page.replace(/\.html$/, '');
+  // vercel.json sets trailingSlash:false, so /el/ 308s to /el. Emit the form
+  // that is already canonical and skip the redirect. The site root is the one
+  // URL that keeps its slash.
+  return page === 'index.html' ? base || '/' : base + '/' + page.replace(/\.html$/, '');
 }
 
 function rewriteUrls(html, dir) {
