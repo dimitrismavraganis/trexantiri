@@ -27,6 +27,18 @@
   </div>
   <p id="preloader-pct" style="margin:18px 0 0;font-family:'Manrope',sans-serif;font-weight:600;font-size:14px;letter-spacing:.05em;color:#3E6C8C;">0%</p>
 </div>
+<script>
+  // Failsafe: js/home.js normally dismisses the preloader. If it 404s, errors, or
+  // stalls, this hides the overlay anyway so the page is never blocked.
+  (function () {
+    function dismiss() {
+      var el = document.getElementById('preloader');
+      if (el && el.style.display !== 'none') el.style.display = 'none';
+    }
+    setTimeout(dismiss, 8000);
+    window.addEventListener('load', function () { setTimeout(dismiss, 2500); });
+  })();
+</script>
 
 <header class="site-header home-header" data-auto-glass style="z-index:200;">
   <div class="bar">
