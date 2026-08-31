@@ -64,6 +64,17 @@ directions** (`Σαλάτες → Salads` *and* `Salads → Σαλάτες`), be
 shows the other language as its subtitle and the two have to swap places
 between builds.
 
+## Photos
+
+**No photo appears twice anywhere on the site**, and each one sits where its
+subject belongs — food on the menu and on the food cards, the building and the
+dining rooms on About and Contact. There are 19 usable photos in `assets/`, and
+that is the whole budget: the four pages have exactly 19 image slots between
+them. Adding a photo to one place currently means taking it away from another,
+which is why About and Contact have no carousel and the closing scene on the
+homepage is a single Ken Burns shot rather than a crossfade. Add more photos and
+those can all come back — `git log` has the versions that had them.
+
 ## Carousels
 
 Each `.trx-carousel` lists its photos **once**. `js/main.js` clones the strip

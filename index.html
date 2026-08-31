@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
   @keyframes trxKenBurns{ 0%{ transform:scale(1); } 100%{ transform:scale(1.12); } }
-  @keyframes trxSceneFade{ 0%{ opacity:0; } 4.1667%{ opacity:1; } 12.5%{ opacity:1; } 16.6667%{ opacity:0; } 100%{ opacity:0; } }
+  @media (prefers-reduced-motion: reduce){ #scene-bg img{ animation:none !important; } }
   @keyframes trxCardUnfold{ 0%{ opacity:0.001; transform:translate(var(--tx),var(--ty)) rotate(var(--rot)) scale(var(--scl)); } 100%{ opacity:1; transform:none; } }
   .site-header.home-header{ position:sticky; height:var(--header-height); display:flex; align-items:center; }
   .trx-step{ display:flex; gap:16px; align-items:flex-start; }
@@ -94,7 +94,7 @@
   </div>
 
   <section data-reveal style="max-width:1240px;margin:0 auto;padding:110px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center;">
-    <div style="aspect-ratio:4/5;position:relative;border-radius:14px;overflow:hidden;"><img src="assets/ceviche.webp" alt="Τραπέζι στη βεράντα με θέα στη θάλασσα" class="img-cover"></div>
+    <div style="aspect-ratio:4/5;position:relative;border-radius:14px;overflow:hidden;"><img src="assets/mussels-ouzo.webp" alt="Το τραπέζι στρωμένο, με τη χαρτοπετσέτα του Τρεχαντηρίου" class="img-cover"></div>
     <div>
       <p class="eyebrow">ΚΑΘΕ ΜΕΡΑ ΦΡΕΣΚΟ ΨΑΡΙ</p>
       <h2 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:clamp(26px,3.2vw,32px);color:#143352;margin:0 0 20px;">Με την εμπειρία και παράδοση τεσσάρων γενεών</h2>
@@ -114,7 +114,7 @@
     </div>
     <div data-reveal-group style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px;">
       <div>
-        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/scene-pasta2.webp" alt="Φρέσκα μπαρμπούνια στον πάγκο" class="img-cover"></div>
+        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/scene-pasta2.webp" alt="Φρέσκα μπαρμπούνια της ημέρας" class="img-cover"></div>
         <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#143352;margin:0 0 8px;">Φρέσκο ψάρι ημέρας</h3>
         <p style="font-size:15px;line-height:1.55;color:#6E6759;margin:0;">Ό,τι έπιασε σήμερα ο Δημήτρης, ψητό στα κάρβουνα.</p>
       </div>
@@ -215,12 +215,7 @@
   <div id="scene-wrapper" style="position:relative;height:100vh;background:#143352;">
     <div style="position:relative;height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;">
       <div id="scene-bg" style="position:absolute;inset:0;">
-        <img data-scene-bg src="assets/scene-table1.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-0.0s,-0.0s;">
-        <img data-scene-bg src="assets/scene-plate.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-4.0s,-4.0s;">
-        <img data-scene-bg src="assets/seafood-plates.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-8.0s,-8.0s;">
-        <img data-scene-bg src="assets/scene-pasta2.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-12.0s,-12.0s;">
-        <img data-scene-bg src="assets/mussels-ouzo.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-16.0s,-16.0s;">
-        <img data-scene-bg src="assets/scene-carry.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-20.0s,-20.0s;">
+        <img data-scene-bg src="assets/scene-carry.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxKenBurns 26s ease-in-out infinite alternate;">
       </div>
       <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,31,51,0.72) 0%,rgba(12,31,51,0.35) 45%,rgba(12,31,51,0.55) 100%);"></div>
       <div id="scene-headline" style="position:relative;z-index:2;">
