@@ -66,14 +66,25 @@ between builds.
 
 ## Photos
 
-**No photo appears twice anywhere on the site**, and each one sits where its
-subject belongs — food on the menu and on the food cards, the building and the
-dining rooms on About and Contact. There are 19 usable photos in `assets/`, and
-that is the whole budget: the four pages have exactly 19 image slots between
-them. Adding a photo to one place currently means taking it away from another,
-which is why About and Contact have no carousel and the closing scene on the
-homepage is a single Ken Burns shot rather than a crossfade. Add more photos and
-those can all come back — `git log` has the versions that had them.
+Every photo on the site comes from `assets/photos/` — the shoot the owner
+uploaded. The loose files directly in `assets/` are earlier crops of the same
+shoot plus three stock plates; nothing references them any more, and only
+`assets/trexantiri-logo.webp` is still in use.
+
+Two rules hold across all four pages, and both are easy to break by accident:
+
+1. **No photo appears twice.** 44 slots, 44 distinct files. Before adding one,
+   check it isn't already placed elsewhere:
+   `grep -oh 'assets/photos/[^"]*' *.html | sort | uniq -d` must print nothing.
+2. **The photo matches the words next to it.** A food card gets the dish it
+   names; the rooms and the building go on About and Contact.
+
+The library also holds near-identical frames of the same moment (`LAX_2949` and
+`LAX_2949-1`, `LAX_3003` and `LAX_3007`, the `LAX_2997` trio…). Only one of each
+pair is used — two frames of the same second read as a repeat even though the
+files differ. Filenames are straight off the camera and are deliberately left
+alone so re-uploads land on top of the right file; the `alt` text is what
+describes each shot.
 
 ## Carousels
 
@@ -99,5 +110,4 @@ Vercel builds from `vercel.json` — `node build.js`, output `dist`. Push to
 ## Notes
 - The webcam embed and Google Maps embed point at third-party URLs and need no keys.
 - Update the Facebook link (currently `https://facebook.com`) in each page's footer once the real page exists.
-- `assets/scene-dorado.webp`, `assets/scene-octopus.jpg` and `assets/scene-trout-figs.webp` are stock shots of dishes that aren't ours, and are also by far the largest files here (8.3 MB / 7.1 MB / 4.1 MB). Nothing references them any more; delete them once you're sure they aren't wanted.
-- Photo filenames predate the photos: `ceviche.webp` is a table on the veranda, `seafood-plates.webp` is steamed mussels, `terrace-palms.webp` is the indoor dining room, `scene-pasta2.webp` is raw red mullet. The `alt` text describes what is actually in each shot.
+- The loose files in `assets/` (everything except `trexantiri-logo.webp`) are unused since the site moved to `assets/photos/` — 34 MB of dead weight in the deploy. Safe to delete once you are sure nothing else links to them.
