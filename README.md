@@ -8,7 +8,7 @@ English pages from the Greek ones.
 - `i18n/en.json` — Greek string → English string
 - `build.js` — generates `dist/`
 - `css/style.css` — all shared styles
-- `js/main.js` — header glass-on-scroll, mobile modal menu, infinite draggable carousels, scroll-reveal (IntersectionObserver)
+- `js/main.js` — header glass-on-scroll, mobile modal menu, infinite draggable carousels, scroll-reveal (IntersectionObserver), cookie notice
 - `js/home.js` — homepage-only: preloader, hero expand/reveal animation, closing-scene text reveal
 - `assets/` — images
 
@@ -58,9 +58,27 @@ The build also handles, for both languages: `<html lang>`, `canonical` and
 tagging Greek fragments on English pages with `lang="el"` so `text-transform:
 uppercase` drops the accents the way Greek requires (Μπύρες → ΜΠΥΡΕΣ).
 
-Dish names in `menu.html` are already English and are deliberately left alone in
-both languages; only the section headings swap, each showing the other language
-as its subtitle.
+Dish names are authored in Greek like everything else and translated through
+`i18n/en.json`. The section headings appear in the dictionary **in both
+directions** (`Σαλάτες → Salads` *and* `Salads → Σαλάτες`), because each heading
+shows the other language as its subtitle and the two have to swap places
+between builds.
+
+## Carousels
+
+Each `.trx-carousel` lists its photos **once**. `js/main.js` clones the strip
+until it is wider than its container and then moves it with a transform, taken
+modulo the width of one set — so it loops without ever reaching an edge.
+Dragging tracks the pointer 1:1 and keeps its momentum; between interactions the
+strip drifts slowly and stops on hover. Without JS the markup degrades to a
+plain horizontally scrollable row, so don't duplicate the items by hand.
+
+## Cookie notice
+
+One markup block per page (`[data-cookie-notice]`, just before `js/main.js`) plus
+`.trx-cookie` in the stylesheet. The choice is remembered in `localStorage` under
+`trx-cookie-notice`. The site sets no tracking cookies, so the notice is purely
+informational and has a single button.
 
 ## Deploy
 
@@ -70,4 +88,5 @@ Vercel builds from `vercel.json` — `node build.js`, output `dist`. Push to
 ## Notes
 - The webcam embed and Google Maps embed point at third-party URLs and need no keys.
 - Update the Facebook link (currently `https://facebook.com`) in each page's footer once the real page exists.
-- `assets/scene-dorado.webp` (8.3 MB) and `assets/scene-octopus.jpg` (7.1 MB) are large enough to hurt load time and are worth recompressing.
+- `assets/scene-dorado.webp`, `assets/scene-octopus.jpg` and `assets/scene-trout-figs.webp` are stock shots of dishes that aren't ours, and are also by far the largest files here (8.3 MB / 7.1 MB / 4.1 MB). Nothing references them any more; delete them once you're sure they aren't wanted.
+- Photo filenames predate the photos: `ceviche.webp` is a table on the veranda, `seafood-plates.webp` is steamed mussels, `terrace-palms.webp` is the indoor dining room, `scene-pasta2.webp` is raw red mullet. The `alt` text describes what is actually in each shot.

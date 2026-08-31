@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Τρεχαντήρι 1924 — Ψαροταβέρνα, Καλαμάκι Ίσθμιας</title>
-<meta name="description" content="Ψαροτάβερνα οικογενειακή από το 1924, στο Καλαμάκι Ίσθμιας. Φρέσκο ψάρι κάθε μέρα, από το δικό μας σκάφος.">
+<meta name="description" content="Ψαροτάβερνα οικογενειακή από το 1924, στο Καλαμάκι Ίσθμιας. Φρέσκο ψάρι κάθε μέρα, από τα δικά μας καΐκια.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,6 +14,8 @@
   @keyframes trxSceneFade{ 0%{ opacity:0; } 4.1667%{ opacity:1; } 12.5%{ opacity:1; } 16.6667%{ opacity:0; } 100%{ opacity:0; } }
   @keyframes trxCardUnfold{ 0%{ opacity:0.001; transform:translate(var(--tx),var(--ty)) rotate(var(--rot)) scale(var(--scl)); } 100%{ opacity:1; transform:none; } }
   .site-header.home-header{ position:sticky; height:var(--header-height); display:flex; align-items:center; }
+  .trx-step{ display:flex; gap:16px; align-items:flex-start; }
+  .trx-step-n{ flex:0 0 auto; width:34px; height:34px; border-radius:50%; border:1.5px solid #E4832E; color:#E4832E; font-weight:700; font-size:15px; display:flex; align-items:center; justify-content:center; }
 </style>
 </head>
 <body>
@@ -76,12 +78,12 @@
   <div style="position:relative;">
     <div style="position:relative;width:100%;height:calc(100vh - var(--header-height));">
       <section id="hero-section" style="position:relative;overflow:hidden;transform-origin:50% 50%;width:100%;height:100%;margin:0 auto;border-radius:clamp(48px,10vw,160px) clamp(48px,10vw,160px) 0 0;">
-        <img id="hero-bg-img" src="assets/hero-terrace.webp" alt="Ο Δημήτρης στη βάρκα, ή το λιμάνι την αυγή" class="img-cover">
+        <img id="hero-bg-img" src="assets/hero-terrace.webp" alt="Στρωμένο τραπέζι δίπλα στη θάλασσα" class="img-cover">
         <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,51,82,0.75) 0%,rgba(20,51,82,0.25) 55%,rgba(20,51,82,0.35) 100%);pointer-events:none;"></div>
         <div style="position:absolute;left:0;right:0;bottom:0;max-width:1240px;margin:0 auto;padding:0 32px 72px;display:flex;flex-direction:column;justify-content:flex-end;">
           <p data-hero-el style="font-family:'Manrope',sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#EEF0E6;margin:0 0 14px;opacity:0;filter:blur(10px);transform:translateY(16px);">ΨΑΡΟΤΑΒΕΡΝΑ ΑΠΟ ΤΟ 1924</p>
-          <h1 data-hero-el style="font-family:'Noto Serif Display',serif;font-weight:700;font-size:clamp(34px,5.5vw,60px);line-height:1.08;color:#fff;margin:0 0 18px;max-width:18ch;opacity:0;filter:blur(10px);transform:translateY(16px);">Ό,τι φέρνει η βάρκα από την θάλασσα στο πιάτο σας.</h1>
-          <p data-hero-el style="font-family:'Manrope',sans-serif;font-weight:400;font-size:18px;line-height:1.6;color:#EEF0E6;margin:0 0 32px;max-width:46ch;opacity:0;filter:blur(10px);transform:translateY(16px);">Φρέσκα ψάρια, κάθε μέρα, από το δικό μας σκάφος. Καλαμάκι, Ίσθμια — από το 1924.</p>
+          <h1 data-hero-el style="font-family:'Noto Serif Display',serif;font-weight:700;font-size:clamp(34px,5.5vw,60px);line-height:1.08;color:#fff;margin:0 0 18px;max-width:18ch;opacity:0;filter:blur(10px);transform:translateY(16px);">Ό,τι φέρνουν τα καΐκια μας, από τη θάλασσα στο πιάτο σας.</h1>
+          <p data-hero-el style="font-family:'Manrope',sans-serif;font-weight:400;font-size:18px;line-height:1.6;color:#EEF0E6;margin:0 0 32px;max-width:46ch;opacity:0;filter:blur(10px);transform:translateY(16px);">Φρέσκα ψάρια, κάθε μέρα, από τα δικά μας καΐκια. Καλαμάκι, Ίσθμια — από το 1924.</p>
           <div style="display:flex;gap:16px;flex-wrap:wrap;">
             <a data-hero-el href="#offerings" style="background:#143352;color:#fff;font-weight:600;font-size:15px;padding:14px 28px;border-radius:10px;text-decoration:none;opacity:0;filter:blur(10px);transform:translateY(16px);">Δείτε το μενού</a>
             <a data-hero-el href="contact.html" style="background:transparent;color:#fff;font-weight:600;font-size:15px;padding:12.5px 26.5px;border-radius:10px;border:1.5px solid #fff;text-decoration:none;opacity:0;filter:blur(10px);transform:translateY(16px);">Κάντε κράτηση</a>
@@ -92,11 +94,11 @@
   </div>
 
   <section data-reveal style="max-width:1240px;margin:0 auto;padding:110px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center;">
-    <div style="aspect-ratio:4/5;position:relative;border-radius:14px;overflow:hidden;"><img src="assets/waiter-logo.webp" alt="Ο Δημήτρης στη βάρκα, ή το σκάφος στο Καλαμάκι" class="img-cover"></div>
+    <div style="aspect-ratio:4/5;position:relative;border-radius:14px;overflow:hidden;"><img src="assets/ceviche.webp" alt="Τραπέζι στη βεράντα με θέα στη θάλασσα" class="img-cover"></div>
     <div>
       <p class="eyebrow">ΚΑΘΕ ΜΕΡΑ ΦΡΕΣΚΟ ΨΑΡΙ</p>
-      <h2 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:clamp(26px,3.2vw,32px);color:#143352;margin:0 0 20px;">Τέσσερις γενιές, ένα σκάφος</h2>
-      <p style="font-size:18px;line-height:1.65;color:#29241F;margin:0 0 24px;max-width:62ch;">Το Τρεχαντήρι δεν είναι μια ψαροταβέρνα με άποψη για τη θάλασσα — είναι μια οικογένεια που ζει από αυτήν, τέσσερις γενιές τώρα. Ο Δημήτρης Μαγνήσαλης, καπετάνιος και ιδιοκτήτης 4ης γενιάς, βγαίνει ο ίδιος κάθε μέρα στον Σαρωνικό κόλπο με το σκάφος του. Ό,τι φέρει, το βρίσκετε στον πάγκο μας το ίδιο βράδυ.</p>
+      <h2 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:clamp(26px,3.2vw,32px);color:#143352;margin:0 0 20px;">Με την εμπειρία και παράδοση τεσσάρων γενεών</h2>
+      <p style="font-size:18px;line-height:1.65;color:#29241F;margin:0 0 24px;max-width:62ch;">Το Τρεχαντήρι είναι μια οικογενειακή ψαροταβέρνα, τέσσερις γενιές τώρα. Ο Δημήτρης Μαγνήσαλης βγαίνει ο ίδιος κάθε μέρα στον Σαρωνικό με τα δύο μας καΐκια. Ό,τι πιάνει, το βρίσκετε στη βιτρίνα μας το ίδιο βράδυ.</p>
       <a href="about.html" style="color:#143352;font-weight:600;font-size:15px;text-decoration:underline;text-underline-offset:4px;">Μάθετε την ιστορία μας →</a>
     </div>
   </section>
@@ -112,22 +114,22 @@
     </div>
     <div data-reveal-group style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px;">
       <div>
-        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/seafood-plates.webp" alt="Ψάρι στα κάρβουνα" class="img-cover"></div>
+        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/scene-pasta2.webp" alt="Φρέσκα μπαρμπούνια στον πάγκο" class="img-cover"></div>
         <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#143352;margin:0 0 8px;">Φρέσκο ψάρι ημέρας</h3>
         <p style="font-size:15px;line-height:1.55;color:#6E6759;margin:0;">Ό,τι έπιασε σήμερα ο Δημήτρης, ψητό στα κάρβουνα.</p>
       </div>
       <div>
-        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/ceviche.webp" alt="Καραβιδοσπαγέτι" class="img-cover"></div>
+        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/scene-pasta1.webp" alt="Καραβιδομακαρονάδα" class="img-cover"></div>
         <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#143352;margin:0 0 8px;">Αστακός &amp; καραβίδα</h3>
-        <p style="font-size:15px;line-height:1.55;color:#6E6759;margin:0;">Λαχταριστό καραβιδοσπαγέτι, φρέσκο κάθε μέρα.</p>
+        <p style="font-size:15px;line-height:1.55;color:#6E6759;margin:0;">Καραβιδομακαρονάδα, φρέσκια κάθε μέρα.</p>
       </div>
       <div>
-        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/table-spread.webp" alt="Χταπόδι σχάρας" class="img-cover"></div>
+        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/waiter-logo.webp" alt="Χταπόδι και ριζότο με καραβίδα" class="img-cover"></div>
         <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#143352;margin:0 0 8px;">Χταπόδι &amp; θαλασσινά</h3>
         <p style="font-size:15px;line-height:1.55;color:#6E6759;margin:0;">Χταπόδι σχάρας, γαρίδες, μύδια, καλαμάρι.</p>
       </div>
       <div>
-        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/mezedes-spread.webp" alt="Παραδοσιακοί μεζέδες" class="img-cover"></div>
+        <div style="aspect-ratio:1/1;position:relative;margin-bottom:18px;border-radius:14px;overflow:hidden;"><img src="assets/mezedes-spread.webp" alt="Τραπέζι με μεζέδες από ψηλά" class="img-cover"></div>
         <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#143352;margin:0 0 8px;">Παραδοσιακοί μεζέδες</h3>
         <p style="font-size:15px;line-height:1.55;color:#6E6759;margin:0;">Ταραμοσαλάτα, φάβα, τυροκαυτερή, σπιτικά.</p>
       </div>
@@ -136,11 +138,11 @@
   </section>
 
   <section data-reveal style="position:relative;padding:0;">
-    <img src="assets/terrace-view.jpg" alt="Η ταράτσα ή το λιμάνι, φως τέλους ημέρας" style="width:100%;height:520px;object-fit:cover;display:block;">
+    <img src="assets/terrace-view.jpg" alt="Η σκεπαστή βεράντα με θέα στον κόλπο" style="width:100%;height:520px;object-fit:cover;display:block;">
     <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,51,82,0.55) 0%,rgba(20,51,82,0) 60%);pointer-events:none;"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;max-width:1240px;margin:0 auto;padding:0 32px 40px;">
       <p style="font-family:'Manrope',sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#EEF0E6;margin:0 0 12px;">Η ΑΤΜΟΣΦΑΙΡΑ ΜΑΣ</p>
-      <h2 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:clamp(24px,3vw,32px);color:#fff;margin:0 0 14px;max-width:20ch;">Λίγα μέτρα από το νερό, καμία βιασύνη</h2>
+      <h2 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:clamp(24px,3vw,32px);color:#fff;margin:0 0 14px;max-width:20ch;">15 μέτρα από την ακτή, καμία βιασύνη</h2>
       <p style="font-size:18px;line-height:1.6;color:#EEF0E6;margin:0;max-width:60ch;">Ήρεμο φως, αλμυρός αέρας, το τραπέζι έτοιμο πριν καν καθίσετε. Καμία σκηνοθεσία — έτσι είναι το Τρεχαντήρι κάθε μέρα, χειμώνα καλοκαίρι.</p>
     </div>
   </section>
@@ -148,20 +150,55 @@
   <div style="max-width:1240px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;">
     <div style="background:#F8F6EE;border:1px solid #DBD6C6;border-radius:14px;padding:32px 28px;min-height:220px;display:flex;flex-direction:column;gap:14px;--tx:0px;--ty:0px;--rot:0deg;--scl:1;z-index:3;animation:trxCardUnfold 0.7s cubic-bezier(.16,.84,.44,1) 0.1s both;">
       <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="#E4832E" stroke-width="2" stroke-linecap="round"><path d="M4 19c5-6 10-6 15 0s10 6 15 0c3-3.5 6-4.5 10-2"></path><path d="M4 31c5-6 10-6 15 0s10 6 15 0c3-3.5 6-4.5 10-2"></path></svg>
-      <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:24px;color:#143352;margin:0;">100 μέτρα από την ακτή</h3>
+      <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:24px;color:#143352;margin:0;">15 μέτρα από την ακτή</h3>
       <p style="font-size:14px;line-height:1.5;color:#6E6759;margin:0;">Το τραπέζι σας, σχεδόν μέσα στη θάλασσα.</p>
     </div>
     <div style="background:#F8F6EE;border:1px solid #DBD6C6;border-radius:14px;padding:32px 28px;min-height:220px;display:flex;flex-direction:column;gap:14px;--tx:-8px;--ty:6px;--rot:4deg;--scl:0.96;z-index:2;animation:trxCardUnfold 0.7s cubic-bezier(.16,.84,.44,1) 0.2s both;">
       <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="#E4832E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 24c8-9 20-9 27 0-7 9-19 9-27 0Z"></path><path d="M32 24l10-8v16l-10-8Z"></path><circle cx="13" cy="23" r="1.4" fill="#E4832E" stroke="none"></circle></svg>
       <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:24px;color:#143352;margin:0;">30+ πιάτα θαλασσινών</h3>
-      <p style="font-size:14px;line-height:1.5;color:#6E6759;margin:0;">Από απλό ψάρι σχάρας μέχρι καραβιδοσπαγέτι για δύο.</p>
+      <p style="font-size:14px;line-height:1.5;color:#6E6759;margin:0;">Από απλό ψάρι σχάρας μέχρι καραβιδομακαρονάδα για δύο.</p>
     </div>
     <div style="background:#F8F6EE;border:1px solid #DBD6C6;border-radius:14px;padding:32px 28px;min-height:220px;display:flex;flex-direction:column;gap:14px;--tx:-16px;--ty:12px;--rot:8deg;--scl:0.92;z-index:1;animation:trxCardUnfold 0.7s cubic-bezier(.16,.84,.44,1) 0.3s both;">
       <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="#E4832E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v22"></path><path d="M24 10l13 15H24Z"></path><path d="M9 34q15 9 30 0"></path></svg>
-      <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:24px;color:#143352;margin:0;">Δικό μας σκάφος</h3>
-      <p style="font-size:14px;line-height:1.5;color:#6E6759;margin:0;">Το τρεχαντήρι της οικογένειας, ενεργό από το 1924.</p>
+      <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:24px;color:#143352;margin:0;">Δικά μας καΐκια</h3>
+      <p style="font-size:14px;line-height:1.5;color:#6E6759;margin:0;">Δύο καΐκια που βγαίνουν στη θάλασσα κάθε μέρα.</p>
     </div>
   </div>
+
+  <section id="pickup" data-reveal style="background:#143352;">
+    <div style="max-width:1240px;margin:0 auto;padding:90px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center;">
+      <div>
+        <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#E4832E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:18px;"><path d="M8 30h32l-5 8H13l-5-8Z"></path><path d="M24 10v20"></path><path d="M24 14l10 12H24Z"></path><path d="M4 42q10 5 20 0t20 0"></path></svg>
+        <p class="eyebrow" style="color:#7FA8C4;">ΕΙΣΤΕ ΜΕΣΑ ΣΤΟΝ ΚΟΛΠΟ;</p>
+        <h2 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:clamp(26px,3.2vw,32px);color:#fff;margin:0 0 18px;max-width:18ch;">Ερχόμαστε να σας πάρουμε από το σκάφος σας</h2>
+        <p style="font-size:17px;line-height:1.7;color:#DCE9F0;margin:0 0 28px;max-width:48ch;">Αν είστε αγκυροβολημένοι στον κόλπο, πάρτε μας ένα τηλέφωνο. Περνάμε να σας πάρουμε, τρώτε στην ταβέρνα μας και σας γυρίζουμε πίσω.</p>
+        <a href="tel:+302741049315" style="display:inline-block;background:#E4832E;color:#fff;font-weight:600;font-size:15px;padding:14px 28px;border-radius:10px;text-decoration:none;">Καλέστε μας: 27410 49315</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:26px;">
+        <div class="trx-step">
+          <div class="trx-step-n">1</div>
+          <div>
+            <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#fff;margin:0 0 6px;">Ένα τηλεφώνημα</h3>
+            <p style="font-size:15px;line-height:1.6;color:#DCE9F0;margin:0;">Μας λέτε πού είστε και πόσα άτομα.</p>
+          </div>
+        </div>
+        <div class="trx-step">
+          <div class="trx-step-n">2</div>
+          <div>
+            <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#fff;margin:0 0 6px;">Περνάμε και σας παίρνουμε</h3>
+            <p style="font-size:15px;line-height:1.6;color:#DCE9F0;margin:0;">Σας φέρνουμε στην ακτή, μπροστά στο μαγαζί μας.</p>
+          </div>
+        </div>
+        <div class="trx-step">
+          <div class="trx-step-n">3</div>
+          <div>
+            <h3 style="font-family:'Noto Serif Display',serif;font-weight:600;font-size:19px;color:#fff;margin:0 0 6px;">Σας γυρίζουμε πίσω</h3>
+            <p style="font-size:15px;line-height:1.6;color:#DCE9F0;margin:0;">Μετά το φαγητό σας επιστρέφουμε στο σκάφος σας.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="webcam" data-reveal style="max-width:1240px;margin:0 auto;padding:60px 32px 110px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center;">
     <div>
@@ -179,10 +216,10 @@
     <div style="position:relative;height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;">
       <div id="scene-bg" style="position:absolute;inset:0;">
         <img data-scene-bg src="assets/scene-table1.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-0.0s,-0.0s;">
-        <img data-scene-bg src="assets/scene-octopus.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-4.0s,-4.0s;">
-        <img data-scene-bg src="assets/scene-dorado.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-8.0s,-8.0s;">
+        <img data-scene-bg src="assets/scene-plate.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-4.0s,-4.0s;">
+        <img data-scene-bg src="assets/seafood-plates.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-8.0s,-8.0s;">
         <img data-scene-bg src="assets/scene-pasta2.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-12.0s,-12.0s;">
-        <img data-scene-bg src="assets/scene-trout-figs.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-16.0s,-16.0s;">
+        <img data-scene-bg src="assets/mussels-ouzo.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-16.0s,-16.0s;">
         <img data-scene-bg src="assets/scene-carry.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:trxSceneFade 24s linear infinite, trxKenBurns 24s ease-in-out infinite;animation-delay:-20.0s,-20.0s;">
       </div>
       <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,31,51,0.72) 0%,rgba(12,31,51,0.35) 45%,rgba(12,31,51,0.55) 100%);"></div>
@@ -212,17 +249,22 @@
       </div>
       <div>
         <p class="label">Επικοινωνία</p>
-        <p style="font-size:14px;line-height:2;color:#EEF0E6;margin:0;">Τηλέφωνο: 27410 49315<br>Email: totrexantiri1924@gmail.com<br>Καλαμάκι, Ίσθμια 201 00</p>
+        <p style="font-size:14px;line-height:2;color:#EEF0E6;margin:0;">Τηλέφωνο: <a class="plain" href="tel:+302741049315">27410 49315</a><br>Email: <a class="plain" href="mailto:totrexantiri1924@gmail.com">totrexantiri1924@gmail.com</a><br>Καλαμάκι, Ίσθμια 201 00</p>
       </div>
       <div>
         <p class="label">Ωράριο</p>
-        <p style="font-size:14px;line-height:2;color:#EEF0E6;margin:0 0 16px;">Καθημερινά 12:30–23:30</p>
+        <p style="font-size:14px;line-height:2;color:#EEF0E6;margin:0 0 16px;">Χειμερινό 12:30 – 21:30<br>Θερινό 12:30 – 00:30</p>
         <a href="https://facebook.com" style="font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px;">Facebook →</a>
       </div>
     </div>
     <div class="bottom"><p>© 1924–2026 Τρεχαντήρι</p></div>
   </footer>
 
+</div>
+
+<div class="trx-cookie" data-cookie-notice>
+  <p>Χρησιμοποιούμε μόνο τα απαραίτητα cookies για να λειτουργεί σωστά η σελίδα.</p>
+  <button type="button" data-cookie-accept>Εντάξει</button>
 </div>
 
 <script src="js/main.js"></script>
