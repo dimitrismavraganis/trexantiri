@@ -81,6 +81,24 @@ a.trx-modal-link.cta{ margin-top:16px; background:var(--navy); color:#fff; font-
 .trx-fade-l{ left:0; background:linear-gradient(90deg,var(--cream) 0%,rgba(238,240,230,0) 100%); }
 .trx-fade-r{ right:0; background:linear-gradient(270deg,var(--cream) 0%,rgba(238,240,230,0) 100%); }
 
+/* menu list
+   The price never shrinks, so on a narrow column it used to push out past the
+   card. The row wraps instead: name and leader on one line, price dropping to
+   its own right-aligned line when there isn't room. Prices made of two parts
+   ("½kg 5,00 € · ¼kg 3,00 €") break between the parts, never inside one. */
+.trx-menu-card{ break-inside:avoid; background:#F8F6EE; border:1px solid var(--border); border-radius:14px; padding:28px 26px; margin:0 0 24px; }
+.trx-menu-card > h2{ font-family:'Noto Serif Display',serif; font-weight:600; font-size:21px; color:var(--navy); margin:0 0 18px; }
+.trx-item{ margin-bottom:14px; }
+.trx-row{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+.trx-name{ flex:0 1 auto; min-width:0; font-size:16px; font-weight:600; color:var(--ink); }
+.trx-dots{ flex:1 1 20px; min-width:16px; border-bottom:1px dotted #C9C2AE; transform:translateY(-4px); }
+.trx-price{ margin-left:auto; font-size:16px; font-weight:700; color:var(--navy); white-space:nowrap; }
+.trx-price.is-split{ white-space:normal; text-align:right; }
+.trx-price.is-split > span{ white-space:nowrap; }
+.trx-note{ font-size:13.5px; line-height:1.5; color:var(--muted); margin:4px 0 0; }
+.trx-menu-foot{ font-size:14px; line-height:1.6; color:var(--muted); margin:12px 0 0; font-style:italic; }
+.trx-notes li{ font-size:14px; line-height:1.8; color:var(--muted); }
+
 .img-cover{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
 .img-placeholder{ position:absolute; inset:0; width:100%; height:100%; background:#E4E1D4; display:flex; align-items:center; justify-content:center; text-align:center; padding:12px; color:#8b8474; font-size:13px; }
 

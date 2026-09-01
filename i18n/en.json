@@ -30,10 +30,10 @@
   "Η θέα προς τον κόλπο, με ένα καΐκι στο βάθος": "The view out over the bay, with a boat in the distance",
   "ΚΑΘΕ ΜΕΡΑ ΦΡΕΣΚΟ ΨΑΡΙ": "FRESH FISH EVERY DAY",
   "Με την εμπειρία και παράδοση τεσσάρων γενεών": "With the experience and tradition of four generations",
-  "Το Τρεχαντήρι είναι μια οικογενειακή ψαροταβέρνα, τέσσερις γενιές τώρα. Ο Δημήτρης Μαγνήσαλης βγαίνει ο ίδιος κάθε μέρα στον Σαρωνικό με τα δύο μας καΐκια. Ό,τι πιάνει, το βρίσκετε στη βιτρίνα μας το ίδιο βράδυ.": "Trexantiri is a family fish taverna, four generations on. Dimitris Magnisalis takes our two boats out into the Saronic Gulf himself every day. Whatever he catches is in our display that same evening.",
+  "Το Τρεχαντήρι είναι μια οικογενειακή ψαροταβέρνα, τέσσερις γενιές τώρα. Ο Δημήτρης Μαγνήσαλης βγαίνει ο ίδιος κάθε μέρα στον Σαρωνικό με τα δύο μας καΐκια. Ό,τι πιάνει, το βρίσκετε στη βιτρίνα μας την ίδια μέρα.": "Trexantiri is a family fish taverna, four generations on. Dimitris Magnisalis takes our two boats out into the Saronic Gulf himself every day. Whatever he catches is in our display the same day.",
   "Μάθετε την ιστορία μας →": "Read our story →",
   "ΤΙ ΘΑ ΒΡΕΙΤΕ ΣΤΟ ΤΡΑΠΕΖΙ ΜΑΣ": "WHAT YOU'LL FIND ON OUR TABLE",
-  "Ό,τι φέρνει η θάλασσα, το ίδιο βράδυ στο πιάτο σας": "Whatever the sea brings, on your plate the same evening",
+  "Ό,τι φέρνει η θάλασσα, την ίδια μέρα στο πιάτο σας": "Whatever the sea brings, on your plate the same day",
   "Φρέσκα μπαρμπούνια της ημέρας": "The day's fresh red mullet",
   "Φρέσκο ψάρι ημέρας": "Fresh catch of the day",
   "Ό,τι έπιασε σήμερα ο Δημήτρης, ψητό στα κάρβουνα.": "Whatever Dimitris caught today, grilled over charcoal.",
@@ -48,7 +48,7 @@
   "Δείτε όλο το μενού": "See the full menu",
   "Η σκεπαστή βεράντα με θέα στον κόλπο": "The covered veranda looking out over the bay",
   "Η ΑΤΜΟΣΦΑΙΡΑ ΜΑΣ": "THE ATMOSPHERE",
-  "15 μέτρα από την ακτή, καμία βιασύνη": "15 metres from the shore, and no hurry",
+  "Η θάλασσα ακούγεται από το τραπέζι σας": "You can hear the sea from your table",
   "Ήρεμο φως, αλμυρός αέρας, το τραπέζι έτοιμο πριν καν καθίσετε. Καμία σκηνοθεσία — έτσι είναι το Τρεχαντήρι κάθε μέρα, χειμώνα καλοκαίρι.": "Soft light, salt air, and the table laid before you've even sat down. Nothing staged — this is Trexantiri every day, winter and summer.",
   "15 μέτρα από την ακτή": "15 metres from the shore",
   "Το τραπέζι σας, σχεδόν μέσα στη θάλασσα.": "Your table, all but in the sea.",
@@ -77,7 +77,7 @@
   "Η ταβέρνα απ' έξω": "The taverna from outside",
   "Τέσσερις γενιές, δύο καΐκια, ένας κόλπος.": "Four generations, two boats, one bay.",
   "Η οικογένεια Μαγνήσαλη ζει από τη θάλασσα εδώ και τέσσερις γενιές. Ο Δημήτρης, καπετάνιος και ιδιοκτήτης της τέταρτης γενιάς, βγαίνει ο ίδιος κάθε μέρα στον Σαρωνικό με τα δύο μας καΐκια.": "The Magnisalis family has lived from the sea for four generations. Dimitris, captain and fourth-generation owner, takes our two boats out into the Saronic Gulf himself every day.",
-  "Το ψάρι που πιάνουμε το πρωί μπαίνει στη βιτρίνα μας το ίδιο βράδυ. Περνάτε, το βλέπετε, διαλέγετε — και σας το ψήνουμε όπως το θέλετε.": "The fish we catch in the morning goes into our display that same evening. Come by, take a look, pick what you like — and we'll cook it however you want it.",
+  "Το ψάρι που πιάνουμε το πρωί μπαίνει στη βιτρίνα μας την ίδια μέρα. Περνάτε, το βλέπετε, διαλέγετε — και σας το ψήνουμε όπως το θέλετε.": "The fish we catch in the morning goes into our display the same day. Come by, take a look, pick what you like — and we'll cook it however you want it.",
   "Η ξύλινη ταμπέλα του Τρεχαντηρίου": "The wooden Trexantiri sign",
   "Η χρονιά που η οικογένεια Μαγνήσαλη άνοιξε την πρώτη ψαροταβέρνα στο Καλαμάκι.": "The year the Magnisalis family opened the first fish taverna in Kalamaki.",
   "Ο σκεπαστός χώρος με τα γαλάζια τραπέζια": "The covered dining area with its blue-checked tables",
@@ -95,7 +95,7 @@
   "Ο Σαρωνικός κόλπος": "The Saronic Gulf",
   "Καλαμάκι, Ίσθμια — 15 μέτρα από την ακτή, καμία βιασύνη.": "Kalamaki, Isthmia — 15 metres from the shore, and no hurry.",
   "Ελάτε να δοκιμάσετε ό,τι φέρνει η μέρα": "Come and taste whatever the day brings",
-  "Καλαμάκι, Ίσθμια — 15 μέτρα από την ακτή.": "Kalamaki, Isthmia — 15 metres from the shore.",
+  "Καλαμάκι, Ίσθμια. Ανοιχτά χειμώνα καλοκαίρι.": "Kalamaki, Isthmia. Open winter and summer.",
 
   "Τιμοκατάλογος — Τρεχαντήρι 1924": "Menu — Trexantiri 1924",
   "Τιμοκατάλογος: σαλάτες, ντιπς, ορεκτικά, ψάρια και θαλασσινά, κρασιά και ποτά. Ψαροτάβερνα Τρεχαντήρι, Καλαμάκι Ίσθμιας.": "Our menu: salads, dips, appetizers, fish and seafood, wine and drinks. Trexantiri fish taverna, Kalamaki, Isthmia.",
@@ -103,7 +103,6 @@
   "Κάθε μέρα, ό,τι φέρνει η θάλασσα. Το φρέσκο ψάρι το διαλέγετε μόνοι σας από τη βιτρίνα μας.": "Every day, whatever the sea brings. You pick the fresh fish yourself, straight from our display.",
 
   "Σαλάτες": "Salads",
-  "Salads": "Σαλάτες",
   "Ντοματοσαλάτα": "Tomato Salad",
   "Χωριάτικη σαλάτα": "Traditional Greek Salad",
   "Βραστά ανάμεικτα λαχανικά": "Boiled Mixed Vegetables",
@@ -114,7 +113,6 @@
   "Ανάμεικτη σαλάτα (λάχανο, μαρούλι)": "Mixed Salad (cabbage, lettuce)",
 
   "Ντιπς": "Dips",
-  "Dips": "Ντιπς",
   "Ταραμοσαλάτα": "Fish Roe dip (taramosalata)",
   "Μελιτζανοσαλάτα": "Eggplant dip (melitzanosalata)",
   "Τυροκαυτερή": "Spicy cheese dip (tyrokafteri)",
@@ -123,14 +121,12 @@
   "Σκορδαλιά": "Garlic dip (skordalia)",
 
   "Τυριά": "Cheese",
-  "Cheese": "Τυριά",
   "Φέτα": "Feta Cheese",
   "Φέτα ψητή": "Grilled Feta Cheese",
   "Γραβιέρα": "Gruyere",
   "Κεφαλοτύρι σαγανάκι": "Fried Aged Hard Cheese (Kefalotyri Saganaki)",
 
   "Ορεκτικά": "Appetizers",
-  "Appetizers": "Ορεκτικά",
   "Πατάτες τηγανητές": "Fried Potatoes",
   "Φρίσσα μαρινάτη": "Marinated Frissa Fish (Blotched Picarel)",
   "Τυροπιτάρι σπιτικό": "Homemade Cheese Pastry (Tyropitari)",
@@ -147,18 +143,15 @@
   "Σεβίτσε καραβίδας": "Crayfish Seviche",
 
   "Κρασιά": "Wine list",
-  "Wine list": "Κρασιά",
   "Μαλαγουζιά λευκό (βιολογικό), κτήμα Νικολάου": "Malagouzia white (organic), Nikolaou estate",
   "Μοσχοφίλερο λευκό, κτήμα Παλυβού": "Moschofilero white, Palyvou estate",
   "Ροζέ (βιολογικό), κτήμα Νικολάου": "Rosé (organic), Nikolaou estate",
 
-  "Μπύρες": "Beer list (500ml)",
-  "Beer list (500ml)": "Μπύρες",
+  "Μπύρες (500ml)": "Beer list (500ml)",
   "Stella Artois βαρελίσια": "Stella Artois draft",
   "Fix χωρίς αλκοόλ": "Fix alcohol free",
 
-  "Ούζο · Τσίπουρο · Τσικουδιά": "Ouzo · Tsipouro · Tsikoudia (200ml)",
-  "Ouzo · Tsipouro · Tsikoudia (200ml)": "Ούζο · Τσίπουρο · Τσικουδιά",
+  "Ούζο · Τσίπουρο · Τσικουδιά (200ml)": "Ouzo · Tsipouro · Tsikoudia (200ml)",
   "Απαλαρίνα": "Apalarina",
   "Βαρβαγιάννη μπλε": "Varvayianni Blue",
   "Βαρβαγιάννη πράσινο": "Varvayianni Green",
@@ -169,8 +162,7 @@
   "Μοσχάτο Σπίνας παλαιωμένο": "Spinas aged Muscat",
   "Λιάτικο": "Liatiko",
 
-  "Αναψυκτικά": "Soft drinks (250ml)",
-  "Soft drinks (250ml)": "Αναψυκτικά",
+  "Αναψυκτικά (250ml)": "Soft drinks (250ml)",
   "Πορτοκαλάδα / Fanta μπλε (χωρίς ανθρακικό)": "Orangeade / Fanta blue (non-sparkling)",
   "Σόδα": "Soda",
   "Νερό 1lt": "Water, non-sparkling, 1lt",
@@ -178,7 +170,6 @@
   "Ξινό Νερό ανθρακούχο 750ml": "Xino sparkling water, 750ml",
 
   "Ψαρικά": "Fish & Seafood",
-  "Fish & Seafood": "Ψαρικά",
   "Καραβίδα ψητή ή αχνιστή": "Grilled or Steamed Langoustine",
   "Καραβίδα Τρεχαντήρι": "Langoustine Trechandiri",
   "Γαρίδες ψητές ή τηγανητές (κατεψυγμένες)": "Grilled or Fried Shrimps (frz.)",
@@ -200,7 +191,6 @@
   "80,00 €/κιλό": "80,00 €/kg",
 
   "Κρεατικά": "Meat Dishes",
-  "Meat Dishes": "Κρεατικά",
   "Χοιρινή μπριζόλα": "Pork Steak",
   "Μπιφτέκια μοσχαρίσια": "Beef Burgers",
 
