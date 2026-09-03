@@ -109,5 +109,5 @@ Vercel builds from `vercel.json` — `node build.js`, output `dist`. Push to
 
 ## Notes
 - The webcam embed and Google Maps embed point at third-party URLs and need no keys.
-- The Instagram link is live; the **Facebook** link in each footer is still the placeholder `https://facebook.com` and needs the real page URL.
+- The Instagram and Facebook links in the footers point at the real pages.
 - The loose files in `assets/` (everything except `trexantiri-logo.webp`) are unused since the site moved to `assets/photos/` — 34 MB of dead weight in the deploy. Safe to delete once you are sure nothing else links to them.
