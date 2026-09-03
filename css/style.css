@@ -123,6 +123,25 @@ a.trx-modal-link.cta{ margin-top:16px; background:var(--navy); color:#fff; font-
 .trx-cookie button:hover{ background:#fff; }
 @media (max-width:560px){ .trx-cookie{ justify-content:flex-start; } .trx-cookie button{ width:100%; } }
 
+/* hero call-to-actions
+   Three of them, so on a phone they have to shrink or the row that holds the
+   review link falls off the bottom of the hero. */
+.hero-cta{ display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+.hero-btn{ background:var(--navy); color:#fff; font-weight:600; font-size:15px; padding:14px 28px; border-radius:10px; text-decoration:none; }
+.hero-btn:hover{ background:var(--navy-dark); color:#fff; }
+.hero-btn.is-ghost{ background:transparent; color:#fff; border:1.5px solid #fff; padding:12.5px 26.5px; }
+.hero-btn.is-ghost:hover{ background:rgba(255,255,255,0.14); color:#fff; }
+.hero-review{ display:inline-flex; align-items:center; gap:9px; color:#fff; font-weight:600; font-size:15px; padding:12.5px 6px; text-decoration:none; }
+.hero-review > span{ text-decoration:underline; text-underline-offset:4px; }
+.hero-review:hover{ color:#fff; }
+.hero-review svg{ flex:0 0 auto; }
+@media (max-width:640px){
+  .hero-cta{ gap:10px; }
+  .hero-btn{ font-size:14px; padding:12px 20px; }
+  .hero-btn.is-ghost{ padding:10.5px 18.5px; }
+  .hero-review{ font-size:14px; padding:8px 4px; }
+}
+
 /* misc reused patterns */
 .eyebrow{ font-family:'Manrope',sans-serif; font-weight:700; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--blue); margin:0 0 14px; }
 .btn-primary{ display:inline-block; background:var(--navy); color:#fff; font-weight:600; font-size:15px; padding:14px 28px; border-radius:10px; text-decoration:none; }

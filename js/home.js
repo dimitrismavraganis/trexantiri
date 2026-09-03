@@ -85,7 +85,7 @@
     }, easeInOutCubic);
 
     for (var i = 0; i < els.length; i++) {
-      await tween(500, (function (el) {
+      await tween(420, (function (el) {
         return function (e) {
           el.style.opacity = e;
           el.style.filter = 'blur(' + ((1 - e) * 10) + 'px)';
@@ -142,7 +142,10 @@
       });
     });
     setupSignatureScene();
-    // hard safety net: whatever happened, never leave the hero stuck mid-animation
-    setTimeout(finalizeHero, 6000);
+    // Hard safety net: whatever happened, never leave the hero stuck
+    // mid-animation. It has to outlast the full chain (preloader, the
+    // expand, then one tween per hero element) or it cuts the last
+    // element in — which is what happened when the review link was added.
+    setTimeout(finalizeHero, 8000);
   });
 })();
